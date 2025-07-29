@@ -16,7 +16,10 @@ def main():
             shopping_list.append(item)
         elif choice == '2':
             item = input("Enter the item to remove")
-            shopping_list.remove(item)
+            if item in shopping_list:
+                shopping_list.remove(item)
+            else:
+                print("This item is not not in the list.")
         elif choice == '3':
             print(shopping_list)
         elif choice == '4':
