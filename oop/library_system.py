@@ -20,7 +20,7 @@ class PrintBook(Book):
         return f"Print{super().__str__()}, Page Count: {self.page_count}"
 
 class Library:
-    def __init__(self, books):
+    def __init__(self):
         self.books = []
 
     def add_book(self, book):
