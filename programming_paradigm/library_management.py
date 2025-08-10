@@ -7,8 +7,9 @@ class Book:
         return f"{self.title} by {self.author}"
 
 class Library:
-    _books = []
-    in_lib_books = []
+    def __init__(self):
+        self._books = []
+        self.in_lib_books = []
     def add_book(self, book):
         self._books.append(book)
         self.in_lib_books.append(book)
